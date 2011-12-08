@@ -1,0 +1,30 @@
+---
+layout: nil
+permalink: /feed/index.html
+---
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>The Setup</title>
+	<link href="http://thesetup.ru/" />
+	<link href="http://thesetup.ru/feed/" rel="self" />
+	<id>http://thesetup.ru/</id>
+	<updated>{{site.posts[0].date | date_to_xmlschema}}</updated>
+	<author><name>Юрий Зацепин</name></author>
+	{% for post in site.posts %}
+	<entry>
+		<title>{{post.person}}</title>
+		<link href="http://{{post.slug}}.thesetup.ru/" />
+		<id>http://{{post.slug}}.thesetup.ru/</id>
+		<published>{{post.date | date_to_xmlschema}}</published>
+		<updated>{{post.date | date_to_xmlschema}}</updated>
+		{% for category in post.categories %}<category term="{{category}}" />
+		{% endfor %}
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p><img src="/images/portraits/{{post.slug}}.jpg" alt="{{post.person}}" width="500" height="335" /></p>
+				{{post.content}}
+			</div>
+		</content>
+	</entry>
+	{% endfor %}
+</feed>

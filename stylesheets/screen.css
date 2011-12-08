@@ -1,0 +1,258 @@
+/* Default styles */
+
+a:link, a:visited {
+color: #215625;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:hover img.portrait {
+opacity: 0.9;
+}
+
+article.contents ul, article.contents ol {
+list-style: disc;
+padding: 10px 25px;
+font-size: 80%;
+}
+
+aside#sidebar {
+float: right;
+width: 130px;
+padding: 20px 0 0 10px;
+font-size: 80%;
+}
+
+aside#sidebar img {
+margin-bottom: 10px;
+}
+
+aside#sidebar p {
+padding: 0;
+margin: 0 0 10px 0;
+}
+
+aside#sidebar .fusiontext a {
+color: #888;
+font-size: 90%;
+}
+
+body {
+padding: 20 40 20 40;
+margin: 0;	
+font-family: "Droid Sans", "Lucida Grande", Tahoma, sans-serif;
+font-weight: 400;
+font-size: 15px;
+}
+
+footer {
+clear: both;
+padding-top: 20px;
+color: #888;
+font-size: 80%;
+}
+
+footer img {
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: -60px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+h1 a:link, h1 a:visited {
+padding: 0;
+margin: 0;
+margin-bottom: 25px;
+font-size: 180%;
+font-weight: 300;
+font-size: 46px;
+line-height: 1.02;
+color: #609A26;
+}
+
+h2 a:link, h2 a:visited {
+padding: 0;
+margin: 0;
+font-size: 180%;
+font-weight: 300;
+font-size: 26px;
+color: #000;
+}
+
+h3 {
+padding: 0;
+margin: 20px 0 5px 0;
+color: #555;
+font-size: 140%;
+font-weight: 300;
+}
+
+html {
+width: 650px;
+margin: auto;
+background: #FBFAF3;
+background: #FBFAF3 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EDE9DF), to(#FBFAF3)) no-repeat 0 0;
+background: #FBFAF3 -webkit-linear-gradient(#EDE9DF, #FBFAF3) no-repeat 0 0;
+background: #FBFAF3 -moz-linear-gradient(#EDE9DF, #FBFAF3) no-repeat 0 0;
+background: #FBFAF3 linear-gradient(#EDE9DF, #FBFAF3) no-repeat 0 0;
+-webkit-background-size: 100% 96px;
+-moz-background-size: 100% 96px;
+background-size: 100% 96px;
+line-height: 17/14;
+color: #444;
+}
+
+img.icon {
+float: left;
+border: solid 1px #000;
+margin-right: 20px;
+}
+
+img.portrait {
+border: solid 1px #000;
+margin-bottom: 20px;
+display: block;
+}
+
+nav ul {
+padding: 5px 0;
+margin: 0;
+font-size: 110%;
+font-weight: 200;
+border-top: solid 1px #eee;
+border-bottom: solid 1px #eee;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li:before {
+content: " / ";
+color: #ddd;
+}
+
+nav ul li:first-child:before {
+content: "";
+}
+
+p#tagline {
+padding: 2px;
+margin: 0 0 10px 0;
+color: #777;
+font-size: 120%;
+font-weight: 200;
+}
+
+p.credits {
+float: right;
+padding: 0;
+margin: 0;
+color: #aaa;
+font-size: 80%;
+}
+
+p.details {
+color: #aaa;
+padding: 5px 0;
+margin: 5px 0 10px 0;
+font-size: 80%;
+}
+
+p.summary {
+padding: 0;
+margin: 5px 0 0 0;
+font-size: 110%;
+color: #888;
+}
+
+section#contents {
+width: 500px;
+padding: 20px 18px 0 0;
+line-height: 25px;
+}
+
+ul, ol {
+padding: 10px;
+margin: 10px 20px;
+font-size: 85%;
+}
+
+ul#interviews {
+list-style: none inside;
+padding: 0;
+margin: 0;
+font-size: 100%;
+}
+
+ul#interviews > li {
+clear: left;
+padding-bottom: 5px;
+margin-bottom: 15px;
+}
+#inter {
+    z-index: 20;
+    background: #BBDA74;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CAE186), to(#9FCC57));
+    background: -webkit-linear-gradient(#CAE186, #9FCC57);
+    background: -moz-linear-gradient(#CAE186, #9FCC57);
+    background: -ms-linear-gradient(#CAE186, #9FCC57);
+    background: -o-linear-gradient(#CAE186, #9FCC57);
+    background: linear-gradient(#CAE186, #9FCC57);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #9BB85E;
+    color: #5D7730;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 2px 2px;
+    text-decoration: none;
+}
+#post {
+    background: #EFF2CB;
+}
+/* iPhone-type devices here */
+
+@media screen and (max-device-width: 480px) {
+	
+	aside {
+	display: none;
+	}
+	
+	body {
+	padding: 20px;
+	margin: 0;
+	font-size: 20px;
+	}
+	
+	html {
+	width: 500px;
+	margin: 0;
+	}
+	
+	h2 {
+	padding: 10px 0;
+	}
+	
+	img.portrait {
+	margin-left: -20px;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	}
+	
+	nav ul {
+	margin-bottom: 15px;
+	}
+	
+	section#contents {
+	width: auto;
+	line-height: 32px;
+	}	
+}
