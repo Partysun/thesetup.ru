@@ -4,7 +4,7 @@ permalink: /feed/index.html
 ---
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>The Setup</title>
+	<title>Сборка</title>
 	<link href="http://thesetup.ru/" />
 	<link href="http://thesetup.ru/feed/" rel="self" />
 	<id>http://thesetup.ru/</id>
@@ -13,8 +13,8 @@ permalink: /feed/index.html
 	{% for post in site.posts %}
 	<entry>
 		<title>{{post.person}}</title>
-        <link href="http://thesetup.ru/interview/{{post.slug}}". />
-		<id>http://{{post.slug}}.thesetup.ru/</id>
+        <link href="http://thesetup.ru{{post.url}}". />
+        <id>http://thesetup.ru{{post.url}}</id>
 		<published>{{post.date | date_to_xmlschema}}</published>
 		<updated>{{post.date | date_to_xmlschema}}</updated>
 		{% for category in post.categories %}<category term="{{category}}" />
